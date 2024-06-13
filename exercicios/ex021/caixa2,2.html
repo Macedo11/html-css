@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px
+        }
+
+        nav {
+            background-color: rgb(156, 151, 151);
+            padding: 5px;
+        }
+
+        a {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(156, 151, 151);
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 4px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci dignissimos laborum quisquam asperiores, magni autem dolorum, deserunt nobis illum optio accusantium! Quisquam voluptatem dolores repellat atque quidem porro in veritatis.</p>
+                <aside>
+                    Artigo escrito por João Victor
+                </aside>
+            </article>
+        </section> 
+    </main>
+    <footer>
+        <p>Desenvolvido Pelo Maced0nia</p>
+    </footer>
+</body>
+</html>
