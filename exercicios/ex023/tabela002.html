@@ -9,6 +9,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            background-color: lightgray;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
         table {
             border-collapse: collapse;
             width: 500px;
@@ -19,6 +26,10 @@
             padding: 10px;
         }
 
+        #populacao {
+            width: 30px;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
@@ -27,6 +38,8 @@
         .num {
             text-align: right;
         }
+
+        
     </style>
 </head>
 <body>
@@ -44,8 +57,8 @@
      <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" id="populacao">População</th>
         </thead>
 
         <tbody>
@@ -161,7 +174,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
