@@ -10,6 +10,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-weight;
+        }
+
         table {
             border-collapse: collapse;
         }
@@ -40,21 +44,21 @@
         </caption>
 
         <thead class="destaque">           
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
+            <th rowspan="2" scope="colgroup">Área</th>
+            <th rowspan="2" scope="colgroup">Disciplinas</th>
             
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="colgroup">Média</th>
 
             <tr>
-                <td>Nota 1</td>
-                <td>Nota 2</td>          
+                <th scope="colgroup">Nota 1</th>
+                <th scope="colgroup">Nota 2</th>          
             </tr>          
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 
                 <td class="num">0.0</td>
@@ -81,12 +85,12 @@
                 </tr>
             </tr>
             <tr class="destaque">
-                <th colspan="4" id="meio">Média de Exatas</th>
+                <th colspan="4" id="meio" scope="row">Média de Exatas</th>
                 <td class="num">0.0</td>
             </tr>           
             <tr>
                 <tr>
-                    <th rowspan="2">Humanas</th>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
                     <td>História</td>
                     <td class="num">0.0</td>
                     <td class="num">0.0</td>
@@ -101,7 +105,7 @@
             </tr>           
         </tbody>
         <tfoot class="destaque">
-            <th colspan="4">Média de Humanas</th>
+            <th colspan="4" scope="row">Média de Humanas</th>
             <td class="num">0.0</td>
         </tfoot>
     </table>
