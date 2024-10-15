@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /* Aparelgo retrato (protrait)  */
+
+body {
+    background-image: url(../image/cev-portrait.jpg);
+}
