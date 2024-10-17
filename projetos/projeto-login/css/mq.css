@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
+    body {
+        background: linear-gradient(var(--lilas), var(--verde));
+    }
+
+    .container {
+        width: 80%;
+        height: 320px;
+        flex-direction: row;
+    }
+
+    .container .div-img {
+        height: 100%;
+        width: 300px;
+        background-position: bottom right;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .container .div-img img {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width:992px) {
+    body {
+        background: linear-gradient(var(--lilas), var(--verde));
+    }
+
+    .container {
+        width: 770px;
+        height: 320px;
+        flex-direction: row-reverse;
+    }
+
+    .container .div-img {
+        height: 100%;
+        width: 350px;
+        background-position: top left;
+        background-size: cover;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .div-img img{     
+        display: none;
+    }
+}
