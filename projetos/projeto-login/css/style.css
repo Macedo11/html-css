@@ -38,12 +38,12 @@ main {
 
 .container .div-img {
     height: 40%;
+    background: url(../image/predio.jpg);
+    border-radius: 20px 20px 0 0 ;
 }
 
 .div-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 20px 0 0;
+    display: none;
 }
 
 form {
@@ -54,11 +54,11 @@ form {
 }
 
 form h1 {
-    padding: 10px;
+    padding: 5px;
 }
 
 form p {
-    padding: 10px;
+    padding: 5px;
 }
 
 fieldset {
@@ -105,4 +105,53 @@ button {
 .btn-esqueci {
     background-color: white;
     color: var(--verde);
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body {
+        background: linear-gradient(var(--lilas), var(--verde));
+    }
+
+    .container {
+        width: 80%;
+        height: 300px;
+        flex-direction: row;
+    }
+
+    .container .div-img {
+        height: 100%;
+        width: 300px;
+        background-position: bottom right;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .container .div-img img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background: linear-gradient(var(--lilas), var(--verde));
+    }
+
+    .container {
+        width: 770px;
+        height: 300px;
+        flex-direction: row-reverse;
+    }
+
+    .container .div-img {
+        height: 100%;
+        width: 350px;
+        background-position: top left;
+        background-size: cover;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .div-img img{     
+        display: none;
+    }
 }
