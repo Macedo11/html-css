@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*
+    verde: #49a09d
+    lilás: #5f2c82
+*/
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--lilas);
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .div-img {
+    height: 40%;
+}
+
+.div-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    padding: 10px;
+}
+
+form p {
+    padding: 10px;
+}
+
+fieldset {
+    background-color: var(--lilas);
+    width: 95%;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    border: solid 4px var(--lilas);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+fieldset .icon {
+    color: white;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background-color: var(--verde);
+    color: white;
+    border: solid 3px var(--verde);
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-esqueci {
+    background-color: white;
+    color: var(--verde);
+}
