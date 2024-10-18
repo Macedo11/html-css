@@ -1,13 +1,13 @@
 <?php
 
-    $dbHost = 'Localhost';
+    $dbHost = 'localhost';
     $dbUsername = 'root';
-    $dbPassword = '1928';
+    $dbPassword = '';
     $dbName = 'formulario-login';
 
-    $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName)
+    $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
-    if($conexao->connect_erro)
+    if($conexao->connect_errno)
     {
         echo "Erro";
     }

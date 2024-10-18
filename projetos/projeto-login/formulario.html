@@ -1,3 +1,13 @@
+<?pgp
+
+    if(isset($_POST['submit']))
+    {
+        print_r($_POST['email']);
+        print_r($_POST['senha']);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +23,7 @@
     <main>
         <div class="container">
             <div class="div-img"></div>
-            <form action="#" class="div-login">
+            <form action="formulario.php" method="POST" class="div-login">
                 <h1>Login</h1>
                 <p>
                     Seja bem-vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações do seu ambiente.
@@ -32,7 +42,7 @@
                     <label for="password"></label>
                     <input type="password" name="password" id="password" placeholder="Digite sua senha">
                 </fieldset>
-                <button type="submit">Enviar</button>
+                <input type="submit" name="submit" value="Enviar" class="btn-enviar">
                 <button class="btn-esqueci">Esqueci a senha <span class="material-symbols-outlined">mail</span></button>               
             </form>
         </div>
