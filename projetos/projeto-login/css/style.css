@@ -109,4 +109,19 @@ input {
 .btn-esqueci {
     background-color: white;
     color: var(--verde);
+    border: solid 3px var(--verde);
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-esqueci:hover {
+    background-color: #2b5f5d;
+    color: white;
 }

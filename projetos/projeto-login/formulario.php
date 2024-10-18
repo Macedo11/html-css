@@ -1,4 +1,4 @@
-<?pgp
+<?php
 
     if(isset($_POST['submit']))
     {
@@ -43,7 +43,7 @@
                     <input type="password" name="password" id="password" placeholder="Digite sua senha">
                 </fieldset>
                 <input type="submit" name="submit" value="Enviar" class="btn-enviar">
-                <button class="btn-esqueci">Esqueci a senha <span class="material-symbols-outlined">mail</span></button>               
+                <input type="button" value="Esqueci minha senha" class="btn-esqueci">               
             </form>
         </div>
     </main>
