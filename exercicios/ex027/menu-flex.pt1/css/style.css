@@ -32,6 +32,11 @@ header ul li {
     margin: 0 30px 10px;
     border-radius: 5px;
     list-style: none;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-color: rgb(30, 12, 48);
 }
 
 main article{
@@ -45,9 +50,7 @@ main article{
 
 @media screen and (min-width: 610px) and (max-width: 2000px) {
     header {
-        background: red;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         align-items: flex-start;
         justify-content: flex-start;
     }
